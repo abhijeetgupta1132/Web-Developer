@@ -2,95 +2,128 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Assignment 2</title>
+	<title>Menu
+	</title>
 	<style>
-        * {
-         box-sizing: border-box;
-        }
-        section {
+		* {
+			box-sizing: border-box;
+			margin: 0;
+			padding: 0;
+		}
+		   section {
         	 width: 50%;
              /*border: 1px solid black;*/
              float: left;
               padding: 10px;
-
         }
-		h1 {
+        h1 {
 			text-align: center;
 			background-color: grey;
 			background-position: center;
-		}
-		
-		div {
-			width: 300px;
-			height: 250;
-			border: 1px solid black;
-			background-color: green;
-			box-sizing: content-box;
 		}
 		h2 {
 			background-position: center;
 			text-align: center;
 			background-color: blue;
 			font-family: Georgia, serif;
+			padding: 5px;
+			margin-left: 10px;
+			margin-right: 1px;
 		}
-		ul {
-			width: 280px;
+		div {
+			width: 300px;
 			height: 250;
-			font-family: Arial, Helvetica, sans-serif;
+			/*border: 1px solid black;
+			background-color: green;*/
+			padding: 5px;
 		}
-    
 
-	</style>
+
+/********** Base styles **********/
+       
+	
+
+p {
+  border: 1px solid black;
+  margin-bottom: 15px;
+  
+}
+        #p1 {
+			width: 250px;
+			height: 230px;
+			border: 2px solid black;
+			margin-left: 10px;
+			padding: 10px;
+			background-color: green;
+			text-align: center;
+
+		}
+
+		
+		#p2 {
+			width: 300px;
+			height: 250;
+			border: 2px solid black;
+			margin-left: 10px;
+			padding: 10px;
+			background-color: green;
+			text-align: center;
+		}
+
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+	
+  #p1 {
+    width: 280px;
+  }
+  #p2 {
+    width: 280px;
+    height: 240px;
+  }
+}
+
+
+/********** Medium devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  #p1 {
+    width: 250px;
+  }
+  #p2 {
+    width: 250px;
+    height: 250px;
+  }
+}
+
+/********* Small Devices Only ***********/
+@media (min width: 365px) and (max-width: 767px) {
+	#p1 {
+		width: 50%;
+	}
+	#p2 {
+		width: 200px;
+		height: 200px;
+	}
+}
+
+</style>
+
 </head>
 <body>
 	<h1>Menu</h1>
 
-	<section>
-		<div>
-			<div class="container">
-			<h2>VEG PIZZA</h2>
-			
-
-		<ul>
-		   <li>Margherita</li>
-		   <li>Double Cheese Margherita</li>
-		   <li>Mexican Green Wave</li>
-		   <li>Veggie Paradise</li>
-		   <li>Indi Tandoori Paneer</li>
-		   <li>Burger Pizza Classic</li>
-
-		</ul>
-
-		<h2>BEVERAGES</h2>
-		<ul>
-			<li>Pepsi</li> 
-			<li>Coca Cola</li>
-			<li>Ice Tea</li>
-		</ul>
-	    </div>
-    </section>
-
-	<section>
-		<div>
-			<div class="container">
-			<h2> NON-VEG PIZZA</h2>
-		<ul>
-			<li>Papper Barbecue Chicken</li>
-			<li>Chicken Sausage</li>
-			<li>Chicken Golden Delight</li>
-			<li>Non Veg Supreme</li>
-			<li>Chicken Dominator</li>
-			<li>Indi Chicken Tikka</li>
-
-		</ul>
-
-		<h2>SIDE ORDER</h2>
-		<ul>
-			<li>Garlic Breadsticks</li> 
-			<li>Stuffed Garlic Bread</li>
-		</ul>
+    <section>
+	<div>
+		<h2>Chicken</h2>
+		<p id="p1">The chicken (Gallus gallus domesticus) is a type of domesticated fowl, a subspecies of the red junglefowl. Chickens are one of the most common and widespread domestic animals, with a total population of 23.7 billion as of 2018. up from more than 19 billion in 2011.There are more chickens in the world than any other bird or domesticated fowl.</p>
 	</div>
-	</section>
+</section>
+
+    <section>
+	<div>
+		<h2>Beef</h2>
+		<p id="p2"> Beef is a source of protein and nutrients.Most beef skeletal muscle meat can be used as is by merely cutting into certain parts, such as roasts, short ribs.Trimmings, on the other hand, are usually mixed with meat from older, leaner cattle, are ground, minced or used in sausages.The bones are used for making beef stock. Meat from younger cows (calves) is called veal.Beef from steers and heifers is similar.</p>
+	</div>
+</section>
 
 </body>
 </html>
